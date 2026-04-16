@@ -11,6 +11,7 @@ type RenderOptions struct {
 	AllowLAN        bool              // 是否允许局域网连接
 	ExternalUI      string            // 外部 UI 路径（Clash 专用）
 	Debug           bool              // 是否启用调试模式
+	SkipAuths       []string          // 跳过验证的IP段
 }
 
 // Auth 表示代理认证的用户名和密码对。
